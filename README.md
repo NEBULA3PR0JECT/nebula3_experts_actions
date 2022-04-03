@@ -16,4 +16,4 @@ In order to run python scripts inside the container, make sure conda environment
 
 # How to run `run_expert.py`
 STILL WIP
-But the command should be `python3 run_expert.py tracker --backend=detectron --model=CFG_COCO_DETECTION_FerRCNN_X101_32x8d_FPN_LR3x`
+But the command should be (inside Docker) `python3 run_expert.py tracker --backend=detectron --model=CFG_COCO_DETECTION_FerRCNN_X101_32x8d_FPN_LR3x`
