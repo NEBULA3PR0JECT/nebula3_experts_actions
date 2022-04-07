@@ -24,6 +24,9 @@ function install_step {
     # popd  # apex/
 
     # install STEP package
+    if [ -d "STEP/" ] 
+    then    
+        rm -rf STEP/
     git clone https://github.com/NEBULA3PR0JECT/STEP.git
     pushd STEP/
     mkdir -p pretrained/
