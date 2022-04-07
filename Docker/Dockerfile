@@ -39,9 +39,10 @@ ENV TORCH_CUDA_ARCH_LIST="Kepler;Kepler+Tesla;Maxwell;Maxwell+Tegra;Pascal;Volta
 RUN pip install gdown
 
 RUN source activate ${CONDA_ENV} && pip3 install cython && pip3 install 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
-
+RUN ls
 COPY run.sh .
 RUN chmod a+x run.sh
+RUN ./run.sh
 # CMD ./run.sh
 
 

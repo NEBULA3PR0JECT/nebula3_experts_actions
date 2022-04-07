@@ -27,6 +27,7 @@ function install_step {
     if [ -d "STEP/" ] 
     then    
         rm -rf STEP/
+    fi
     git clone https://github.com/NEBULA3PR0JECT/STEP.git
     pushd STEP/
     mkdir -p pretrained/
